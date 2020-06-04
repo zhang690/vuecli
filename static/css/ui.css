@@ -1,0 +1,223 @@
+/* home */
+.body {
+  min-height: 100vh;
+  background: url("../../static/backimg.jpg") no-repeat top;
+}
+
+/* 遮挡层 */
+.cover {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.45)
+}
+
+/* 图片 */
+.image {
+  width: 14.0625rem;
+  height: 4.875rem;
+  position: fixed;
+  top: 9.8125rem;
+  left: 50%;
+  margin-left: -7rem;
+}
+
+img {
+  width: 100%;
+  height: 100%
+}
+
+/* 登录按钮 */
+.register {
+  position: fixed;
+  left: 50%;
+  margin-left: -10.4375rem;
+  top: 29.0625rem;
+}
+
+/* 微信登录按钮 */
+.register-weixin {
+  width: 20.9375rem;
+  height: 3.0625rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(-37deg, rgba(42, 193, 124, 1), rgba(42, 193, 145, 1));
+  box-shadow: 0 .625rem 1.875rem 0 rgba(51, 226, 148, 0.5);
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  line-height: 3.0625rem;
+  text-align: center;
+  user-select: none;
+}
+
+/* 手机号登录按钮 */
+.register-cellphone {
+  width: 20.9375rem;
+  height: 3.0625rem;
+  font-size: 1.125rem;
+  border-radius: 1.5rem;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  border: .0625rem solid rgba(255, 255, 255, 1);
+  line-height: 3.0625rem;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 .0625rem .5rem 0 rgba(227, 226, 226, 0.66);
+  text-align: center;
+  user-select: none;
+}
+
+/* login */
+/* 返回按钮 */
+.back {
+  width: 2.625rem;
+  height: 2.75rem;
+  text-align: center;
+  line-height: 2.75rem;
+  margin-top: 1.25rem;
+}
+
+/* 标题 */
+.title {
+  margin: 1.625rem 0 0 1.0625rem;
+}
+
+.title .title-big {
+  font-size: 2rem;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  padding-bottom: 0.8125rem;
+  line-height: 2rem;
+}
+
+.title .title-disc {
+  font-size: 1rem;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  line-height: 0.9375rem;
+}
+
+/* 输入框 */
+.put {
+  margin: 5.4375rem 1.25rem 0;
+}
+
+.put-phone {
+  height: .9375rem;
+  display: flex;
+  padding-bottom: 1.25rem;
+  border-bottom: .0625rem solid rgba(232, 232, 232, 1);
+}
+
+.put-phone-country {
+  font-size: 1rem;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+  line-height: .9375rem;
+}
+
+.put-phone-line {
+  margin: 0 1.0625rem 0 .4375rem;
+  height: .9375rem;
+  width: .125rem;
+  background-color: rgba(205, 206, 210, 1);
+}
+
+.put-phone-in {
+  margin-top: -0.25rem;
+}
+
+/* 判断输入框状态再给类名 */
+.put .put-blur {
+  color: rgba(153, 153, 153, 1);
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.put .put-active {
+  color: rgba(68, 68, 68, 1);
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* 验证码区域 */
+.put-code {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: .0625rem solid rgba(232, 232, 232, 1);
+}
+/* 发送验证码前验证手机号 */
+.put-checkPhone{
+  width: 6.6875rem;
+  border-radius:1.25rem;
+  position: fixed;
+  top: 15.3125rem;
+  left:50%;
+  margin-left:-3.3125rem;
+}
+.put-checkPhone-error {
+  padding:0 .625rem;
+  height:3.0625rem;
+  background:rgba(0,0,0,1);
+  opacity:0.5;
+  border-radius:1.25rem;
+  position: fixed;
+  top: 15.3125rem;
+  left:50%;
+  margin-left:-3.3125rem;
+  font-size: 15px;
+  text-align: center;
+  line-height: 3.0625rem;
+  font-family:Source Han Sans CN;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+}
+/* 发送验证码 */
+.put-code-send {
+  font-size: 1rem;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: rgba(0, 215, 137, 1);
+}
+
+.put-code-send-active {
+  color: rgba(205, 206, 210, 1);
+}
+
+/* 登录注册是否激活 */
+.present {
+  width: 100%;
+}
+
+.present-affirm {
+  width: 20.9375rem;
+  height: 3.0625rem;
+  margin: 3.75rem auto 0;
+  border-radius: 1.5rem;
+  background: rgba(235, 235, 235, 1);
+  text-align: center;
+  font-size: 1.125rem;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: rgba(153, 153, 153, 1);
+  line-height: 3.0625rem;
+}
+
+.present-affirm-active {
+  background: linear-gradient(-37deg, rgba(42, 193, 124, 1), rgba(42, 193, 145, 1));
+  box-shadow: 0px 10px 30px 0px rgba(51, 226, 148, 0.5);
+  color: rgba(255, 255, 255, 1);
+}
